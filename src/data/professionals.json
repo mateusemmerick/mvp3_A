@@ -1,0 +1,110 @@
+[
+    {
+      "serviceId": 1,
+      "name": "Antonia da Silva",
+      "local": "São Paulo",
+      "price": 2,
+      "rating": 4,
+      "picture": "../src/avatars/7.svg",
+      "phone": "11 98514-7538"
+    },
+    {
+      "serviceId": 1,
+      "name": "Maria Santos",
+      "local": "São Paulo",
+      "price": 1,
+      "rating": 3,
+      "picture": "../src/avatars/8.svg",
+      "phone": "11 98514-3641"
+    },
+    {
+      "serviceId": 2,
+      "name": "Carlos Oliveira",
+      "local": "Rio de Janeiro",
+      "price": 3,
+      "rating": 5,
+      "picture": "../src/avatars/1.svg",
+      "phone": "21 99824-5783"
+    },
+    {
+      "serviceId": 1,
+      "name": "Ana Silva",
+      "local": "São Paulo",
+      "price": 2,
+      "rating": 4,
+      "picture": "../src/avatars/9.svg",
+      "phone": "11 99724-5112"
+    },
+    {
+      "serviceId": 3,
+      "name": "Pedro Ferreira",
+      "local": "São Paulo",
+      "price": 1,
+      "rating": 5,
+      "picture": "../src/avatars/2.svg",
+      "phone": "11 97854-5367"
+    },
+    {
+      "serviceId": 4,
+      "name": "João Souza",
+      "local": "Rio de Janeiro",
+      "price": 3,
+      "rating": 5,
+      "picture": "../src/avatars/3.svg",
+      "phone": "21 99821-9858"
+    },
+    {
+      "serviceId": 5,
+      "name": "Lucas Oliveira",
+      "local": "São Paulo",
+      "price": 2,
+      "rating": 4,
+      "picture": "../src/avatars/4.svg",
+      "phone": "11 98844-5484"
+    },
+    {
+      "serviceId": 5,
+      "name": "Carolina Silva",
+      "local": "São Paulo",
+      "price": 1,
+      "rating": 3,
+      "picture": "../src/avatars/10.svg",
+      "phone": "11 99823-5281"
+    },
+    {
+      "serviceId": 4,
+      "name": "Gabriela Souza",
+      "local": "São Paulo",
+      "price": 1,
+      "rating": 3,
+      "picture": "../src/avatars/11.svg",
+      "phone": "11 99623-5001"
+    },
+    {
+      "serviceId": 6,
+      "name": "Mariana Costa",
+      "local": "Rio de Janeiro",
+      "price": 3,
+      "rating": 5,
+      "picture": "../src/avatars/12.svg",
+      "phone": "21 9900-7829"
+    },
+    {
+      "serviceId": 6,
+      "name": "Mariana Oliveira",
+      "local": "Rio de Janeiro",
+      "price": 3,
+      "rating": 5,
+      "picture": "../src/avatars/13.svg",
+      "phone": "21 98501-7268"
+    },
+    {
+      "serviceId": 7,
+      "name": "Ricardo Souza",
+      "local": "São Paulo",
+      "price": 2,
+      "rating": 4,
+      "picture": "../src/avatars/5.svg",
+      "phone": "11 99999-0000"
+    }
+  ]

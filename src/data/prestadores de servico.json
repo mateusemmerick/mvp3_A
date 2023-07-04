@@ -1,0 +1,361 @@
+const prestadores = [
+    // Serviços domésticos
+    {
+      serviceId: 1,
+      services: [
+            "Faxina"
+        ],
+      name: "Antonia da Silva",
+      local: "São Paulo",
+      price: 2,
+      rating: 4,
+      picture: "https://source.unsplash.com/random?wallpapers"
+    },
+    {
+      serviceId: 1,
+      services: [
+            "Faxina"
+        ],
+      name: "Maria Santos",
+      local: "São Paulo",
+      price: 1,
+      rating: 3,
+      picture: "https://source.unsplash.com/random?wallpapers"
+    },
+    {
+      serviceId: 1,
+      services: [
+            "Lavagem de Roupa"
+        ],
+      name: "Carlos Oliveira",
+      local: "Rio de Janeiro",
+      price: 3,
+      rating: 5,
+      picture: "https://source.unsplash.com/random?wallpapers"
+    },
+    {
+      serviceId: 1,
+      services: [
+            "Faxina"
+        ],
+      name: "Ana Silva",
+      local: "São Paulo",
+      price: 2,
+      rating: 4,
+      picture: "https://source.unsplash.com/random?wallpapers"
+    },
+    {
+      serviceId: 1,
+      services: [
+            "Lavagem de Roupa"
+        ],
+      name: "Pedro Ferreira",
+      local: "São Paulo",
+      price: 1,
+      rating: 5,
+      picture: "https://source.unsplash.com/random?wallpapers"
+    },
+    // Manutenção e reformas
+    {
+      serviceId: 2,
+      services: [
+            "Hidráulica"
+        ],
+      name: "João Souza",
+      local: "Rio de Janeiro",
+      price: 3,
+      rating: 5,
+      picture: "https://source.unsplash.com/random?wallpapers"
+    },
+    {
+      serviceId: 2,
+      services: [
+            "Elétrica"
+        ],
+      name: "Lucas Oliveira",
+      local: "São Paulo",
+      price: 2,
+      rating: 4,
+      picture: "https://source.unsplash.com/random?wallpapers"
+    },
+    {
+      serviceId: 2,
+      services: [
+            "Elétrica"
+        ],
+      name: "Carolina Silva",
+      local: "São Paulo",
+      price: 1,
+      rating: 3,
+      picture: "https://source.unsplash.com/random?wallpapers"
+    },
+    {
+      serviceId: 2,
+      services: [
+            "Hidráulica"
+        ],
+      name: "Carolina Silva",
+      local: "São Paulo",
+      price: 1,
+      rating: 3,
+      picture: "https://source.unsplash.com/random?wallpapers"
+    },
+    {
+      serviceId: 2,
+      services: [
+            "Marcenaria"
+        ],
+      name: "Mariana Costa",
+      local: "Rio de Janeiro",
+      price: 3,
+      rating: 5,
+      picture: "https://source.unsplash.com/random?wallpapers"
+    },
+    {
+      serviceId: 2,
+      services: [
+            "Alvenaria"
+        ],
+      name: "Mariana Costa",
+      local: "Rio de Janeiro",
+      price: 3,
+      rating: 5,
+      picture: "https://source.unsplash.com/random?wallpapers"
+    },
+    {
+      serviceId: 2,
+      services: [
+            "Alvenaria"
+        ],
+      name: "Ricardo Souza",
+      local: "São Paulo",
+      price: 2,
+      rating: 4,
+      picture: "https://source.unsplash.com/random?wallpapers"
+    },
+    // Eventos e festas
+    {
+      serviceId: 3,
+      services: [
+            "Casamento"
+        ],
+      name: "Maria Ferreira",
+      local: "São Paulo",
+      price: 1,
+      rating: 3,
+      picture: "https://source.unsplash.com/random?wallpapers"
+    },
+    {
+      serviceId: 3,
+      services: [
+            "Casamento"
+        ],
+      name: "João Santos",
+      local: "São Paulo",
+      price: 2,
+      rating: 4,
+      picture: "https://source.unsplash.com/random?wallpapers"
+    },
+    {
+      serviceId: 3,
+      services: [
+            "Casamento"
+        ],
+      name: "Ana Oliveira",
+      local: "Rio de Janeiro",
+      price: 3,
+      rating: 5,
+      picture: "https://source.unsplash.com/random?wallpapers"
+    },
+    {
+      serviceId: 3,
+      services: [
+            "Aniversário"
+        ],
+      name: "Pedro Souza",
+      local: "São Paulo",
+      price: 1,
+      rating: 3,
+      picture: "https://source.unsplash.com/random?wallpapers"
+    },
+    {
+      serviceId: 3,
+      services: [
+            "Jantares"
+        ],
+      name: "Carla Santos",
+      local: "São Paulo",
+      price: 2,
+      rating: 4,
+      picture: "https://source.unsplash.com/random?wallpapers"
+    },
+    // Cuidadoras
+    {
+      serviceId: 4,
+      services: [
+            "Cuidador de Idosos"
+        ],
+      name: "Pedro Costa",
+      local: "São Paulo",
+      price: 2,
+      rating: 4,
+      picture: "https://source.unsplash.com/random?wallpapers"
+    },
+    {
+      serviceId: 4,
+      services: [
+            "Babás"
+        ],
+      name: "Camila Oliveira",
+      local: "Rio de Janeiro",
+      price: 3,
+      rating: 5,
+      picture: "https://source.unsplash.com/random?wallpapers"
+    },
+    {
+      serviceId: 4,
+      services: [
+            "Cuidador de Idosos"
+        ],
+      name: "Fernanda Souza",
+      local: "São Paulo",
+      price: 2,
+      rating: 4,
+      picture: "https://source.unsplash.com/random?wallpapers"
+    },
+    {
+      serviceId: 4,
+      services: [
+            "Babás"
+        ],
+      name: "Juliana Costa",
+      local: "São Paulo",
+      price: 1,
+      rating: 3,
+      picture: "https://source.unsplash.com/random?wallpapers"
+    },
+    {
+      serviceId: 4,
+      services: [
+            "Cuidador de Idosos"
+        ],
+      name: "Luiz Santos",
+      local: "Rio de Janeiro",
+      price: 3,
+      rating: 5,
+      picture: "https://source.unsplash.com/random?wallpapers"
+    },
+    // Transporte e mudanças
+    {
+      serviceId: 5,
+      services: [
+            "Frete"
+        ],
+      name: "Ana Oliveira",
+      local: "Rio de Janeiro",
+      price: 3,
+      rating: 5,
+      picture: "https://source.unsplash.com/random?wallpapers"
+    },
+    {
+      serviceId: 5,
+      services: [
+            "Motorista Particular"
+        ],
+      name: "João Costa",
+      local: "São Paulo",
+      price: 2,
+      rating: 4,
+      picture: "https://source.unsplash.com/random?wallpapers"
+    },
+    {
+      serviceId: 5,
+      services: [
+            "Motorista Particular"
+        ],
+      name: "Lucas Santos",
+      local: "São Paulo",
+      price: 1,
+      rating: 3,
+      picture: "https://source.unsplash.com/random?wallpapers"
+    },
+    {
+      serviceId: 5,
+      services: [
+            "Frete"
+        ],
+      name: "Carolina Oliveira",
+      local: "Rio de Janeiro",
+      price: 3,
+      rating: 5,
+      picture: "https://source.unsplash.com/random?wallpapers"
+    },
+    {
+      serviceId: 5,
+      services: [
+            "Frete"
+        ],
+      name: "Mariana Souza",
+      local: "São Paulo",
+      price: 2,
+      rating: 4,
+      picture: "https://source.unsplash.com/random?wallpapers"
+    },
+    // Ensino
+    {
+      serviceId: 6,
+      services: [
+            "Professor de Música"
+        ],
+      name: "Lucas Santos",
+      local: "São Paulo",
+      price: 1,
+      rating: 4,
+      picture: "https://source.unsplash.com/random?wallpapers"
+    },
+    {
+      serviceId: 6,
+      services: [
+            "Professor de Matemática"
+        ],
+      name: "Juliana Costa",
+      local: "São Paulo",
+      price: 2,
+      rating: 5,
+      picture: "https://source.unsplash.com/random?wallpapers"
+    },
+    {
+      serviceId: 6,
+      services: [
+            "Professor de Inglês"
+        ],
+      name: "Mariana Oliveira",
+      local: "Rio de Janeiro",
+      price: 3,
+      rating: 4,
+      picture: "https://source.unsplash.com/random?wallpapers"
+    },
+    {
+      serviceId: 6,
+      services: [
+            "Professor de Inglês"
+        ],
+      name: "Pedro Souza",
+      local: "São Paulo",
+      price: 1,
+      rating: 3,
+      picture: "https://source.unsplash.com/random?wallpapers"
+    },
+    {
+      serviceId: 6,
+      services: [
+            "Professor de Matemática"
+        ],
+      name: "Carla Santos",
+      local: "São Paulo",
+      price: 2,
+      rating: 4,
+      picture: "https://source.unsplash.com/random?wallpapers"
+    }
+];
+  

@@ -1,0 +1,38 @@
+[
+    {
+      "name": "Serviços domésticos",
+      "description": "Faxina, lavanderia, jardinagem, entre outros.",
+      "image":  "https://source.unsplash.com/random?wallpapers",      
+      "id": 1
+    },
+    {
+      "name": "Manutenção e reformas",
+      "description": "Hidráulica, elétrica, alvenaria, marcenaria, entre outros.",
+      "image": "https://source.unsplash.com/random?wallpapers",
+      "id": 2
+    },
+    {
+      "name": "Eventos e festas",
+      "description": "Casamento, aniversário, jantares, entre outros.",
+      "image": "https://source.unsplash.com/random?wallpapers",
+      "id": 3
+    },
+    {
+      "name": "Cuidadoras",
+      "description": "Babás, cuidadoras de idosos, entre outros.",
+      "image": "https://source.unsplash.com/random?wallpapers",
+      "id": 4
+    },
+    {
+      "name": "Transporte e mudanças",
+      "description": "Fretes e motoristas particulares.",
+      "image": "https://source.unsplash.com/random?wallpapers",
+      "id": 5
+    },
+    {
+      "name": "Ensino",
+      "description": "Professores particulares de diversas áreas.",
+      "image": "https://source.unsplash.com/random?wallpapers",
+      "id": 6
+    }
+  ]
