@@ -27,7 +27,7 @@ export default function Search({ searchParams, onSearch }) {
   }, []);
 
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '4rem' }}>
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '1rem' }}>
       <TextField
         id="outlined-basic"
         label="Buscar"

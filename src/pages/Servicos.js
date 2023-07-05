@@ -42,13 +42,16 @@ export default function Servicos() {
   }
 
 
+
 // pra breadcrumbs  const mainServiceName = services.find(service => service.groupId === params.id *1).groupName;  
+const mainService = services.find(service => service.groupId === params.id *1);  
+const breadcrumbArray = [mainService.groupName, mainService.groupId];
 
   return (
     <ThemeProvider theme={defaultTheme}>
       <CssBaseline />
       <main> 
-        <Breadcrumbs  />       
+        <Breadcrumbs  arr={breadcrumbArray} />       
         <Search searchParams={mySearchParams} onSearch={handleSearch} />
         <Container sx={{ py: 8 }} maxWidth="lg">
           <Grid container spacing={4}>

@@ -27,15 +27,6 @@ export default function Header() {
                             Início
                         </Link>
                     </RouterLink>
-                    <RouterLink to='/servicos'>
-                        <Link
-                            variant="button"
-                            color="text.primary"                            
-                            sx={{ my: 1, mx: 1.5 }}
-                        >
-                            Serviços
-                        </Link>
-                    </RouterLink>
                     <RouterLink to='/sobre'>
                     <Link
                         variant="button"
