@@ -5,8 +5,10 @@ import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 import { Link as RouterLink } from 'react-router-dom';
 
+
+
 export default function Header() {
-    return (
+    return (    
         <AppBar
             position="static"
             color="default"
@@ -27,6 +29,15 @@ export default function Header() {
                             Início
                         </Link>
                     </RouterLink>
+                    <RouterLink to="/servicos">
+                        <Link
+                            variant="button"
+                            color="text.primary"
+                            sx={{ my: 1, mx: 1.5 }}
+                        >
+                            Serviços
+                        </Link>
+                    </RouterLink>
                     <RouterLink to='/sobre'>
                     <Link
                         variant="button"
@@ -39,6 +50,5 @@ export default function Header() {
                 </nav>
             </Toolbar>
         </AppBar>
-
     )
 }

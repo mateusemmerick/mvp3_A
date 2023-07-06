@@ -19,12 +19,22 @@ export default function Breadcrumbs({ arr }) {
     )
   }
   else if (arr.length === 4) {
-    const lastPath = '/servicos/' + arr[1];
     return (
       <div style={customStyles}>
         <Link to='/'>Início</Link>&nbsp;/&nbsp; 
-        <Link to={lastPath}>{arr[0]}</Link>&nbsp;/&nbsp;
+        <Link to='/servicos'>Serviços</Link>&nbsp;/&nbsp;        
         {arr[2]}
+      </div>
+    )
+  }
+  else if (arr.length === 6) {
+    const lastPath = '/servicos/' + arr[3];
+    return (
+      <div style={customStyles}>
+        <Link to='/'>Início</Link>&nbsp;/&nbsp; 
+        <Link to='/servicos'>Serviços</Link>&nbsp;/&nbsp;       
+        <Link to={lastPath}>{arr[2]}</Link>&nbsp;/&nbsp;
+        {arr[4]}
       </div>
     )
   }

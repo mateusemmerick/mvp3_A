@@ -12,6 +12,8 @@ import professionals from '../data/professionals.json';
 import Search, {search} from '../components/Search';
 import Breadcrumbs from '../components/Breadcrumbs';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
+
 const defaultTheme = createTheme();
 
 export default function Profissionais() {
@@ -27,10 +29,9 @@ export default function Profissionais() {
 
   // funcao para pegar pagina anterior
   const mainService = services.find(service => service.serviceId === params.id2 *1);    
-  const breadcrumbArray = [mainService.groupName, mainService.groupId, mainService.name, mainService.serviceId];
+  const breadcrumbArray = ["Serviços", 0, mainService.groupName, mainService.groupId, mainService.name, mainService.serviceId];
 
   return (
-    <ThemeProvider theme={defaultTheme}>
     <main>
       <Breadcrumbs  arr={breadcrumbArray} />
       <Search searchParams={mySearchParams} onSearch={handleSearch} />
@@ -44,6 +45,5 @@ export default function Profissionais() {
         </Grid>
       </Container>
     </main>
-    </ThemeProvider>
   );
 }
