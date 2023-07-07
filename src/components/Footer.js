@@ -6,7 +6,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 
 const footerStyles = {
-  backgroundColor: '#adadad',
+  backgroundColor: '#f5f5f5',
   padding: '10px',
   marginTop: 'auto',
 };
@@ -27,7 +27,7 @@ export default function Footer() {
         color="text.secondary"
         component="p"
       >
-        Nos siga nas redes sociais!
+        Siga nossas redes sociais!
       </Typography>
     <InstagramIcon />
     <FacebookIcon/>

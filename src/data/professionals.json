@@ -5,7 +5,7 @@
       "local": "São Paulo",
       "price": 2,
       "rating": 4,
-      "picture": "../src/avatars/7.svg",
+      "picture": "/avatars/7.svg",
       "phone": "11 98514-7538"
     },
     {
@@ -14,7 +14,7 @@
       "local": "São Paulo",
       "price": 1,
       "rating": 3,
-      "picture": "../src/avatars/8.svg",
+      "picture": "/avatars/8.svg",
       "phone": "11 98514-3641"
     },
     {
@@ -23,7 +23,7 @@
       "local": "Rio de Janeiro",
       "price": 3,
       "rating": 5,
-      "picture": "../src/avatars/1.svg",
+      "picture": "/avatars/1.svg",
       "phone": "21 99824-5783"
     },
     {
@@ -32,7 +32,7 @@
       "local": "São Paulo",
       "price": 2,
       "rating": 4,
-      "picture": "../src/avatars/9.svg",
+      "picture": "/avatars/9.svg",
       "phone": "11 99724-5112"
     },
     {
@@ -41,7 +41,7 @@
       "local": "São Paulo",
       "price": 1,
       "rating": 5,
-      "picture": "../src/avatars/2.svg",
+      "picture": "/avatars/2.svg",
       "phone": "11 97854-5367"
     },
     {
@@ -50,7 +50,7 @@
       "local": "Rio de Janeiro",
       "price": 3,
       "rating": 5,
-      "picture": "../src/avatars/3.svg",
+      "picture": "/avatars/3.svg",
       "phone": "21 99821-9858"
     },
     {
@@ -59,7 +59,7 @@
       "local": "São Paulo",
       "price": 2,
       "rating": 4,
-      "picture": "../src/avatars/4.svg",
+      "picture": "/avatars/4.svg",
       "phone": "11 98844-5484"
     },
     {
@@ -68,7 +68,7 @@
       "local": "São Paulo",
       "price": 1,
       "rating": 3,
-      "picture": "../src/avatars/10.svg",
+      "picture": "/avatars/10.svg",
       "phone": "11 99823-5281"
     },
     {
@@ -77,7 +77,7 @@
       "local": "São Paulo",
       "price": 1,
       "rating": 3,
-      "picture": "../src/avatars/11.svg",
+      "picture": "/avatars/11.svg",
       "phone": "11 99623-5001"
     },
     {
@@ -86,7 +86,7 @@
       "local": "Rio de Janeiro",
       "price": 3,
       "rating": 5,
-      "picture": "../src/avatars/12.svg",
+      "picture": "/avatars/12.svg",
       "phone": "21 9900-7829"
     },
     {
@@ -95,7 +95,7 @@
       "local": "Rio de Janeiro",
       "price": 3,
       "rating": 5,
-      "picture": "../src/avatars/13.svg",
+      "picture": "/avatars/13.svg",
       "phone": "21 98501-7268"
     },
     {
@@ -104,7 +104,7 @@
       "local": "São Paulo",
       "price": 2,
       "rating": 4,
-      "picture": "../src/avatars/5.svg",
+      "picture": "/avatars/5.svg",
       "phone": "11 99999-0000"
     }
   ]

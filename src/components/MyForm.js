@@ -5,7 +5,7 @@ import MyButton from '../components/MyButton';
 import Container from '@mui/material/Container';
 import { useNavigate } from 'react-router-dom';
 
-const MyForm = ({ inputs }) => {
+const MyForm = ({ inputs, buttonProps }) => {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({});
 
@@ -16,7 +16,7 @@ const MyForm = ({ inputs }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     alert(JSON.stringify(formData));
-    navigate('/'); 
+    navigate('/');
   };
 
   return (
@@ -24,7 +24,6 @@ const MyForm = ({ inputs }) => {
       <form onSubmit={handleSubmit}>
         {inputs.map((input) => {
           const { type, name, label, options } = input;
-
           switch (type) {
             case 'text':
               return (
@@ -75,6 +74,13 @@ const MyForm = ({ inputs }) => {
               return null;
           }
         })}
+        <div style={{ float: 'right' }}>
+          <MyButton type="submit"
+          text={buttonProps.text}
+          icon={buttonProps.icon}
+          iconRotation={buttonProps.iconRotation}
+          textBefore={buttonProps.textBefore} />
+        </div>
       </form>
     </Container>
   );

@@ -5,7 +5,7 @@
       "serviceId": 1,
       "name": "Faxina",
       "description": "Serviços gerais de faxina residencial.",
-      "image": "./src/card-images/limpeza.jpeg"
+      "image": "/card-images/faxina.JPG"
     },
     {
       "groupId": 1,
@@ -13,7 +13,7 @@
       "serviceId": 2,
       "name": "Lavanderia",
       "description": "Serviços de lavanderia",
-      "image": "https://source.unsplash.com/random?wallpapers"
+      "image": "/card-images/lavanderia.JPG"
     },
     {
       "groupId": 1,
@@ -21,7 +21,7 @@
       "serviceId": 3,
       "name": "Jardinagem",
       "description": "Serviços de jardinagem",
-      "image": "https://source.unsplash.com/random?wallpapers"
+      "image": "/card-images/jardinagem.JPG"
     },
     {
       "groupId": 2,
@@ -29,7 +29,7 @@
       "serviceId": 4,
       "name": "Hidráulica",
       "description": "Serviços de manutenção e instalação hidráulica",
-      "image": "https://source.unsplash.com/random?wallpapers"
+      "image": "/card-images/hidraulica.JPG"
     },
     {
       "groupId": 2,
@@ -37,7 +37,7 @@
       "serviceId": 5,
       "name": "Elétrica",
       "description": "Serviços de manutenção e instalação elétrica",
-      "image": "https://source.unsplash.com/random?wallpapers"
+      "image": "/card-images/eletrica.JPG"
     },
     {
       "groupId": 2,
@@ -45,7 +45,7 @@
       "serviceId": 6,
       "name": "Alvenaria",
       "description": "Serviços de manutenção e construção em alvenaria",
-      "image": "https://source.unsplash.com/random?wallpapers"
+      "image": "/card-images/alvenaria.JPG"
     },
     {
       "groupId": 2,
@@ -53,6 +53,6 @@
       "serviceId": 6,
       "name": "Marcenaria",
       "description": "Serviços de manutenção e construção em madeira",
-      "image": "https://source.unsplash.com/random?wallpapers"
+      "image": "/card-images/marcenaria.JPG"
     }
   ]

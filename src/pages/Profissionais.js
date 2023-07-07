@@ -1,20 +1,13 @@
 import React from 'react'
 import CardProf from '../components/CardProf';
-
 import { useState } from 'react';
-import TextField from '@mui/material/TextField'
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
-import { useParams, useNavigate} from 'react-router-dom';
-
+import { useParams } from 'react-router-dom';
 import services from '../data/services.json';
 import professionals from '../data/professionals.json';
 import Search, {search} from '../components/Search';
 import Breadcrumbs from '../components/Breadcrumbs';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
-
-const defaultTheme = createTheme();
 
 export default function Profissionais() {
   const params = useParams();    
