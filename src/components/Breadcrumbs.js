@@ -12,7 +12,7 @@ export default function Breadcrumbs({ arr }) {
   if (arr.length === 2) {
     return (
       <div style={customStyles}>
-        <Link to='/'>Início</Link>&nbsp;/&nbsp;  
+        <Link to='/'>Início</Link>&nbsp;/&nbsp;
         {arr[0]}
       </div>
     )
@@ -20,8 +20,8 @@ export default function Breadcrumbs({ arr }) {
   else if (arr.length === 4) {
     return (
       <div style={customStyles}>
-        <Link to='/'>Início</Link>&nbsp;/&nbsp; 
-        <Link to='/servicos'>Serviços</Link>&nbsp;/&nbsp;        
+        <Link to='/'>Início</Link>&nbsp;/&nbsp;
+        <Link to='/servicos'>Serviços</Link>&nbsp;/&nbsp;
         {arr[2]}
       </div>
     )
@@ -30,14 +30,11 @@ export default function Breadcrumbs({ arr }) {
     const lastPath = '/servicos/' + arr[3];
     return (
       <div style={customStyles}>
-        <Link to='/'>Início</Link>&nbsp;/&nbsp; 
-        <Link to='/servicos'>Serviços</Link>&nbsp;/&nbsp;       
+        <Link to='/'>Início</Link>&nbsp;/&nbsp;
+        <Link to='/servicos'>Serviços</Link>&nbsp;/&nbsp;
         <Link to={lastPath}>{arr[2]}</Link>&nbsp;/&nbsp;
         {arr[4]}
       </div>
     )
   }
-
-
-
 }

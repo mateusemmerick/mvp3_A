@@ -2,22 +2,17 @@ import * as React from 'react';
 import { CardActionArea } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
-import { useFetcher, useNavigate } from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 import MyCard from '../components/MyCard';
-
-// verificar se precisa fazer de alguma outra maneira.
 import mainServices from '../data/mainServices.json'
-/////////////
 import Search, { search } from '../components/Search';
 import Breadcrumbs from '../components/Breadcrumbs';
 
 export default function MainServicos() {
     const navigate = useNavigate();
     const mySearchParams = ["name", "description"];
-
     const [filteredServices, setFilteredServices] = useState([]);
-
     function handleSearch(query) {
         const filteredItems = search(mainServices, mySearchParams, query);
         setFilteredServices(filteredItems);

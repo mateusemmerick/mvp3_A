@@ -10,7 +10,6 @@ export default function MyCard({ item }) {
         <Card
             sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
         >
-            {/* <img src={require(path)} /> */}
             <CardMedia
                 component="div"
                 sx={{
@@ -18,7 +17,7 @@ export default function MyCard({ item }) {
                     pt: '80.25%',
                 }}
                 image={path}
-            />            
+            />
             <CardContent sx={{ flexGrow: 1, height: 150 }}>
                 <Typography gutterBottom variant="h5" component="h2">
                     {item.name}

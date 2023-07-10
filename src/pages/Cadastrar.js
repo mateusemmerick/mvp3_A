@@ -34,8 +34,3 @@ export default function Cadastrar() {
     </div>
   );
 }
-
-
-// what to do here:
-// Colocar os seguintes inputs:
-// Nome, email, cidade, preencher os Servicos, telefone

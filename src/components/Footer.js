@@ -11,28 +11,22 @@ const footerStyles = {
   marginTop: 'auto',
 };
 
-const contentStyles = {
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-};
-
 export default function Footer() {
-  return (    
-    <Box  sx={footerStyles}  component="footer">
-      <Typography variant="h6" align="center" gutterBottom>              
-      <Typography
-        variant="subtitle1"
-        align="center"
-        color="text.secondary"
-        component="p"
-      >
-        Siga nossas redes sociais!
+  return (
+    <Box sx={footerStyles} component="footer">
+      <Typography variant="h6" align="center" gutterBottom>
+        <Typography
+          variant="subtitle1"
+          align="center"
+          color="text.secondary"
+          component="p"
+        >
+          Siga nossas redes sociais!
+        </Typography>
+        <InstagramIcon />
+        <FacebookIcon />
+        <TwitterIcon />
       </Typography>
-    <InstagramIcon />
-    <FacebookIcon/>
-    <TwitterIcon/>
-    </Typography>
-    </Box>    
+    </Box>
   )
 }

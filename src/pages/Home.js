@@ -39,7 +39,7 @@ export default function Home() {
                                 >
                                     <SearchIcon sx={{ fontSize: '10rem' }} />
                                 </CardMedia>
-                                <CardContent sx={{ flexGrow: 1, height: 80, alignSelf:'center' }}>
+                                <CardContent sx={{ flexGrow: 1, height: 80, alignSelf: 'center' }}>
                                     <Typography gutterBottom variant="h5" component="h2">
                                         Encontrar Serviço
                                     </Typography>
@@ -65,7 +65,7 @@ export default function Home() {
                                 >
                                     <BuildIcon sx={{ fontSize: '10rem' }} />
                                 </CardMedia>
-                                <CardContent sx={{ flexGrow: 1, height: 80, alignSelf:'center' }}>
+                                <CardContent sx={{ flexGrow: 1, height: 80, alignSelf: 'center' }}>
                                     <Typography gutterBottom variant="h5" component="h2">
                                         Oferecer Serviço
                                     </Typography>

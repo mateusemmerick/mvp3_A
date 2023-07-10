@@ -6,7 +6,7 @@ import Link from '@mui/material/Link';
 import { Link as RouterLink } from 'react-router-dom';
 
 export default function Header() {
-    return (    
+    return (
         <AppBar
             position="static"
             color="default"
@@ -37,13 +37,13 @@ export default function Header() {
                         </Link>
                     </RouterLink>
                     <RouterLink to='/sobre'>
-                    <Link
-                        variant="button"
-                        color="text.primary"                        
-                        sx={{ my: 1, mx: 1.5 }}
-                    >
-                        Sobre
-                    </Link>
+                        <Link
+                            variant="button"
+                            color="text.primary"
+                            sx={{ my: 1, mx: 1.5 }}
+                        >
+                            Sobre
+                        </Link>
                     </RouterLink>
                 </nav>
             </Toolbar>

@@ -9,7 +9,6 @@ import Sobre from './pages/Sobre';
 import Profissionais from './pages/Profissionais';
 import Cadastrar from './pages/Cadastrar';
 import Box from '@mui/material/Box'
-
 import CssBaseline from '@mui/material/CssBaseline';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 

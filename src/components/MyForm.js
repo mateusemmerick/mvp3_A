@@ -76,14 +76,13 @@ const MyForm = ({ inputs, buttonProps }) => {
         })}
         <div style={{ float: 'right' }}>
           <MyButton type="submit"
-          text={buttonProps.text}
-          icon={buttonProps.icon}
-          iconRotation={buttonProps.iconRotation}
-          textBefore={buttonProps.textBefore} />
+            text={buttonProps.text}
+            icon={buttonProps.icon}
+            iconRotation={buttonProps.iconRotation}
+            textBefore={buttonProps.textBefore} />
         </div>
       </form>
     </Container>
   );
 };
-
 export default MyForm;

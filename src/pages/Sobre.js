@@ -10,35 +10,34 @@ const sobre = {
   description: descricao,
   image: process.env.PUBLIC_URL + '/_0f0c16b0-b3a9-463c-a57f-2cf71bee3d28.jpeg'
 }
-
 const inputs = [
-    { type: 'text', name: 'nome', label: 'Nome' },
-    { type: 'text', name: 'mail', label: 'Email' },    
-    { type: 'text', name: 'phone', label: 'Telefone' },    
-    { type: 'textarea', name: 'escrevaAqui', label: 'Escreva aqui sua mensagem' },
-  ];
+  { type: 'text', name: 'nome', label: 'Nome' },
+  { type: 'text', name: 'mail', label: 'Email' },
+  { type: 'text', name: 'phone', label: 'Telefone' },
+  { type: 'textarea', name: 'escrevaAqui', label: 'Escreva aqui sua mensagem' },
+];
 
-    const buttonProps = {
-    text: 'Enviar',
-    icon: <SendIconComponent />,
-    iconRotation: -45,
-    textBefore: true,
-  };
+const buttonProps = {
+  text: 'Enviar',
+  icon: <SendIconComponent />,
+  iconRotation: -45,
+  textBefore: true,
+};
 
 export default function Sobre() {
   return (
 
-      <Container sx={{marginTop: '2rem'}}>
-        <Grid container spacing={2}>
-          <Grid item xs={12} sm={4}>            
-              <MyCard item={sobre} />            
-          </Grid>
-          <Grid item xs={12} sm={8} sx={{marginBottom: '2rem'}}>    
-          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}><h3>Fale Conosco!</h3></div>                  
-            <MyForm inputs={inputs} buttonProps={buttonProps} />            
-          </Grid>
-        </Grid>   
-      </Container>
+    <Container sx={{ marginTop: '2rem' }}>
+      <Grid container spacing={2}>
+        <Grid item xs={12} sm={4}>
+          <MyCard item={sobre} />
+        </Grid>
+        <Grid item xs={12} sm={8} sx={{ marginBottom: '2rem' }}>
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}><h3>Fale Conosco!</h3></div>
+          <MyForm inputs={inputs} buttonProps={buttonProps} />
+        </Grid>
+      </Grid>
+    </Container>
   )
 }
 

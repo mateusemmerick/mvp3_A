@@ -4,7 +4,6 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import CardHeader from '@mui/material/CardHeader';
 import Avatar from '@mui/material/Avatar';
-import IconButton from '@mui/material/IconButton';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import PhoneIcon from '@mui/icons-material/Phone';
 
@@ -20,7 +19,6 @@ export default function CardProf({ item }) {
   } else if (item.price === 3) {
     dollarSigns = "$$$";
   };
-
   if (item.rating === 1) {
     rating = "★☆☆☆☆";
   } else if (item.rating === 2) {
@@ -32,30 +30,25 @@ export default function CardProf({ item }) {
   } else if (item.rating === 5) {
     rating = "★★★★★";
   };
-
   return (
     <Card sx={{ minWidth: 100 }}>
-      <CardContent style={{ backgroundColor: 'rgb(200 208 215)' }}>
+      <CardContent style={{ backgroundColor: 'rgb(207 207 207)' }}>
         <CardHeader
           avatar={
             <Avatar src={item.picture} />
           }
-          action={
-            <IconButton aria-label="settings">
-            </IconButton>
-          }
           title={item.name}
         />
-        <Typography sx={{ fontSize: 12 }} color="text.secondary" gutterBottom>
+        <Typography sx={{ fontSize: 15 }} color="text.secondary" >
           <LocationOnIcon sx={{ fontSize: 'small' }} />  {item.local}
         </Typography>
-        <Typography sx={{ fontSize: 12 }} color="text.secondary" gutterBottom>
-          {dollarSigns}
-        </Typography>
-        <Typography sx={{ fontSize: 12 }} color="text.secondary" gutterBottom>
+        <Typography sx={{ fontSize: 15 }} color="text.secondary" >
           {rating}
         </Typography>
-        <Typography sx={{ fontSize: 12 }} color="text.secondary" gutterBottom>
+        <Typography sx={{ fontSize: 15 }} color="text.secondary" >
+          {dollarSigns}
+        </Typography>
+        <Typography sx={{ fontSize: 15 }} color="text.secondary" >
           <PhoneIcon sx={{ fontSize: 'small' }} />  {item.phone}
         </Typography>
       </CardContent>
