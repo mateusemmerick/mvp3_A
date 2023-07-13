@@ -7,11 +7,9 @@ import Avatar from '@mui/material/Avatar';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import PhoneIcon from '@mui/icons-material/Phone';
 
-export default function CardProf({ item }) {
-  console.log(item)
+export default function CardProf({ item }) {  
   let dollarSigns = '';
   let rating = '';
-
   if (item.price === 1) {
     dollarSigns = "$";
   } else if (item.price === 2) {

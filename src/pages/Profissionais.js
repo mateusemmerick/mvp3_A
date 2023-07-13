@@ -1,24 +1,44 @@
 import React from 'react'
 import CardProf from '../components/CardProf';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import { useParams } from 'react-router-dom';
-import services from '../data/services.json';
-import professionals from '../data/professionals.json';
 import Search, { search } from '../components/Search';
 import Breadcrumbs from '../components/Breadcrumbs';
+import axios from 'axios';
 
 export default function Profissionais() {
   const params = useParams();
+  const [mainService, setMainService] = useState([]);
+  const [professionals, setProfessionals] = useState([]);
   const [filteredProfessionals, setFilteredProfessionals] = useState([]);
-  const professionalsList = professionals.filter(professional => professional.serviceId === params.id2 * 1);
+  const id = params.id2 * 1;
+
+  useEffect(() => {
+    const fetchData = async (id) => {
+      try {
+        const [servicesResponse, professionalsResponse] = await Promise.all([
+          axios.get('/services.json'),
+          axios.get('/professionals.json')
+        ]);        
+        const serviceData = servicesResponse.data.filter(service => service.serviceId === id)[0];
+        const professionalData = professionalsResponse.data.filter(professional => professional.serviceId === id);      
+        setMainService(serviceData);
+        setProfessionals(professionalData);
+        setFilteredProfessionals(professionalData);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+    fetchData(id);
+  }, [id]);
+ 
   const mySearchParams = ["name", "local"];
   function handleSearch(query) {
-    const filteredItems = search(professionalsList, mySearchParams, query);
+    const filteredItems = search(professionals, mySearchParams, query);
     setFilteredProfessionals(filteredItems);
-  }
-  const mainService = services.find(service => service.serviceId === params.id2 * 1);
+  }  
   const breadcrumbArray = ["Serviços", 0, mainService.groupName, mainService.groupId, mainService.name, mainService.serviceId];
   return (
     <main>

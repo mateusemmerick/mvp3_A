@@ -1,6 +1,6 @@
 import React from 'react'
 import MyCard from '../components/MyCard'
-import { Grid, Container, Paper } from '@mui/material';
+import { Grid, Container } from '@mui/material';
 import MyForm from '../components/MyForm';
 import SendIconComponent from '@mui/icons-material/Send'
 

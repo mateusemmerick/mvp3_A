@@ -6,10 +6,10 @@ const services = [
     { value: 'service1', label: 'Faxina' },
     { value: 'service2', label: 'Lavanderia' },
     { value: 'service3', label: 'Jardinagem' },
-    { value: 'service3', label: 'Hidráulica' },
-    { value: 'service3', label: 'Elétrica' },
-    { value: 'service3', label: 'Alvenaria' },
-    { value: 'service3', label: 'Marcenaria' },
+    { value: 'service4', label: 'Hidráulica' },
+    { value: 'service5', label: 'Elétrica' },
+    { value: 'service6', label: 'Alvenaria' },
+    { value: 'service7', label: 'Marcenaria' },
   ];
   const inputs = [
     { type: 'text', name: 'nome', label: 'Nome' },

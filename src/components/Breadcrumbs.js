@@ -1,8 +1,6 @@
-import { useLocation } from "react-router-dom";
 import { Link } from 'react-router-dom';
 
-export default function Breadcrumbs({ arr }) {
-  const location = useLocation();
+export default function Breadcrumbs({ arr }) {  
   const customStyles = {
     marginLeft: '5rem',
     marginTop: '1rem',

@@ -26,12 +26,9 @@ export default function Home() {
                             <Card
                                 sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
                             >
-                                {/* <img src={require(path)} /> */}
                                 <CardMedia
                                     component="div"
                                     sx={{
-                                        // 16:9
-
                                         display: 'flex',
                                         alignItems: 'center',
                                         justifyContent: 'center',
@@ -52,12 +49,9 @@ export default function Home() {
                             <Card
                                 sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
                             >
-                                {/* <img src={require(path)} /> */}
                                 <CardMedia
                                     component="div"
                                     sx={{
-                                        // 16:9
-
                                         display: 'flex',
                                         alignItems: 'center',
                                         justifyContent: 'center',

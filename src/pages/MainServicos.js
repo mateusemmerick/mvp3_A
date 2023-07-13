@@ -3,18 +3,35 @@ import { CardActionArea } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import { useNavigate } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import MyCard from '../components/MyCard';
-import mainServices from '../data/mainServices.json'
 import Search, { search } from '../components/Search';
 import Breadcrumbs from '../components/Breadcrumbs';
+import axios from 'axios';
 
 export default function MainServicos() {
     const navigate = useNavigate();
     const mySearchParams = ["name", "description"];
+    const [services, setServices] = useState([]);
     const [filteredServices, setFilteredServices] = useState([]);
+
+    useEffect(() => {
+        const fetchData = async () => {
+          try {
+            const response = await axios.get('/mainServices.json'); 
+            const data = response.data;
+            setServices(data);
+            setFilteredServices(data);
+          } catch (error) {
+            console.error('Error fetching data:', error);
+          }
+        };
+    
+        fetchData();
+      }, []);
+
     function handleSearch(query) {
-        const filteredItems = search(mainServices, mySearchParams, query);
+        const filteredItems = search(services, mySearchParams, query);
         setFilteredServices(filteredItems);
     }
     const breadcrumbArray = ["Serviços", 0];
