@@ -8,21 +8,19 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import SearchIcon from '@mui/icons-material/Search';
-import BuildIcon from '@mui/icons-material/Build';
+import SellIcon from '@mui/icons-material/Sell';
 
 export default function Home() {
     const navigate = useNavigate();
     return (
         <main>
             <div style={{ margin: '3rem' }}>
-                Precisa de ajuda para encontrar um profissional confiável para realizar aquele serviço que tanto precisa? Ou talvez você seja um talento em busca de oportunidades para oferecer suas habilidades? Bem, você está no lugar certo!
-                Aqui no Serviços Já, oferecemos uma plataforma fácil e conveniente para conectar pessoas que buscam serviços e profissionais experientes em diversas áreas. Seja você um indivíduo com tarefas domésticas, necessidades de manutenção ou até mesmo alguém em busca de aulas particulares, estamos aqui para ajudar.
-                Selecione uma das opções abaixo.
+            Explore a nossa plataforma online dedicada à busca e comercialização de iPhones usados de qualidade, onde você pode descobrir o dispositivo perfeito e também vender o seu com total praticidade e segurança.
             </div>
             <Container sx={{ py: 5 }} maxWidth="lg">
                 <Grid container spacing={4} justifyContent="center">
                     <Grid item xs={12} sm={4} md={3}>
-                        <CardActionArea onClick={() => navigate('/servicos/')}>
+                        <CardActionArea onClick={() => navigate('/produtos/')}>
                             <Card
                                 sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
                             >
@@ -38,14 +36,14 @@ export default function Home() {
                                 </CardMedia>
                                 <CardContent sx={{ flexGrow: 1, height: 80, alignSelf: 'center' }}>
                                     <Typography gutterBottom variant="h5" component="h2">
-                                        Encontrar Serviço
+                                        Buscar iPhone
                                     </Typography>
                                 </CardContent>
                             </Card>
                         </CardActionArea>
                     </Grid>
                     <Grid item xs={12} sm={4} md={3}>
-                        <CardActionArea onClick={() => navigate('/cadastrar/')}>
+                        <CardActionArea onClick={() => navigate('/vender/')}>
                             <Card
                                 sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
                             >
@@ -57,11 +55,11 @@ export default function Home() {
                                         justifyContent: 'center',
                                     }}
                                 >
-                                    <BuildIcon sx={{ fontSize: '10rem' }} />
+                                    <SellIcon sx={{ fontSize: '10rem' }} />
                                 </CardMedia>
                                 <CardContent sx={{ flexGrow: 1, height: 80, alignSelf: 'center' }}>
                                     <Typography gutterBottom variant="h5" component="h2">
-                                        Oferecer Serviço
+                                        Vender iPhone
                                     </Typography>
                                 </CardContent>
                             </Card>

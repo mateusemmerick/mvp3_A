@@ -5,7 +5,7 @@ import MyButton from '../components/MyButton';
 import Container from '@mui/material/Container';
 import { useNavigate } from 'react-router-dom';
 
-const MyForm = ({ inputs, buttonProps }) => {
+const MyForm = ({ inputs, buttonProps, onSubmit, navigateAfter }) => {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({});
 
@@ -15,8 +15,11 @@ const MyForm = ({ inputs, buttonProps }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    alert(JSON.stringify(formData));
-    navigate('/');
+    onSubmit(formData);
+    if(navigateAfter === true){
+      navigate('/');
+    }
+    
   };
 
   return (
@@ -44,7 +47,7 @@ const MyForm = ({ inputs, buttonProps }) => {
                   name={name}
                   label={label}
                   select
-                  value={formData[name] || ''}
+                  value={formData[name] !== undefined ? formData[name] : ''}
                   onChange={handleChange}
                   fullWidth
                   margin="normal"
@@ -70,11 +73,24 @@ const MyForm = ({ inputs, buttonProps }) => {
                   margin="normal"
                 />
               );
+            case 'number':
+              return (
+                <TextField
+                  key={name}
+                  name={name}
+                  label={label}
+                  type="number"
+                  value={formData[name] || ''}
+                  onChange={handleChange}
+                  fullWidth
+                  margin="normal"
+                />
+              );
             default:
               return null;
           }
         })}
-        <div style={{ float: 'right' }}>
+        <div style={{ float: 'right', marginBottom: '1rem' }}>
           <MyButton type="submit"
             text={buttonProps.text}
             icon={buttonProps.icon}

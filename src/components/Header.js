@@ -15,7 +15,7 @@ export default function Header() {
         >
             <Toolbar sx={{ flexWrap: 'wrap' }}>
                 <Typography variant="h5" color="inherit" noWrap sx={{ flexGrow: 1 }}>
-                    Serviços Já
+                    iPlace
                 </Typography>
                 <nav>
                     <RouterLink to="/">
@@ -25,15 +25,6 @@ export default function Header() {
                             sx={{ my: 1, mx: 1.5 }}
                         >
                             Início
-                        </Link>
-                    </RouterLink>
-                    <RouterLink to="/servicos">
-                        <Link
-                            variant="button"
-                            color="text.primary"
-                            sx={{ my: 1, mx: 1.5 }}
-                        >
-                            Serviços
                         </Link>
                     </RouterLink>
                     <RouterLink to='/sobre'>

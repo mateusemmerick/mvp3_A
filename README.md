@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# MVP Sprint 3 - iPlace
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é um projeto que faz parte do MVP da sprint 3 - Desenvolvimento Back-end Avançado.
+O projeto consiste em um site para comercialização de iPhones. Por meio dele é possível ofertar e comprar um iPhone.
 
-## Available Scripts
+# APIs
 
-In the project directory, you can run:
+O front-end se comunica com 3 APIs, duas delas desenvolvidas, e uma API gratuita. 
+A API relacionada ao estoque se encontra no link: 
+A API relacionada ao registro de vendas se encontra no link:
 
-### `npm start`
+# API Externa
+A API externa utilizada foi a ViaCEP (viacep.com.br). É uma API gratuita, sem necessidade de registro para utilização. A rota utilizada foi a de validação do CEP, obtendo o retorno no formato JSON. Essa rota é executada diretamente no front-end.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Para usá-la, basta utizar o endpoint: viacep.com.br/ws/{CEP}/json/ , onde {CEP} é a variável para consulta. 
+A resposta da API são informações completas como logradouro, bairro, cidade, estado entre outras.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Como executar
+Será necessário ter o Nodejs, ou o npm, instalado.
 
-### `npm test`
+Após clonar o repositório, é necessário ir ao diretório raiz desse projeto pelo terminal para poder executar os comandos descritos abaixo.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+$ npm install Este comando instala as dependências/bibliotecas, descritas no arquivo package.json. Uma pasta chamada node_modules será criada.
 
-### `npm run build`
+Para executar a interface basta executar o comando: $ npm start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Abra o http://localhost:3000/#/ no navegador.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Esse front-end também poderá ser executado via docker, utilizando os seguintes comandos (necessário possuir docker desktop instalado):
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Criação da imagem
+```
+docker build . -t <Nome da imagem>
+```
+Execução da imagem
+```
+docker run -d -p 3000:3000 <Nome da imagem>
+```

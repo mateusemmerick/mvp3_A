@@ -4,11 +4,11 @@ import { Grid, Container } from '@mui/material';
 import MyForm from '../components/MyForm';
 import SendIconComponent from '@mui/icons-material/Send'
 
-const descricao = "Nosso objetivo é conectar prestadores de serviços com aqueles que precisam, por meio de uma plataforma simples e intuitiva! Estamos aqui para facilitar a busca e contratação de profissionais qualificados, proporcionando uma experiência prática e eficiente para todos os usuários.";
+const descricao = "Nosso compromisso é proporcionar uma experiência incomparável para entusiastas da Apple, oferecendo um espaço virtual onde você pode comprar, vender e explorar uma vasta seleção de iPhones usados, todos em um único local confiável."
 const sobre = {
-  nome: "Serviços Já",
+  nome: "iPlace",
   description: descricao,
-  image: process.env.PUBLIC_URL + '/_0f0c16b0-b3a9-463c-a57f-2cf71bee3d28.jpeg'
+  image: process.env.PUBLIC_URL + '/logo.jpeg'
 }
 const inputs = [
   { type: 'text', name: 'nome', label: 'Nome' },
