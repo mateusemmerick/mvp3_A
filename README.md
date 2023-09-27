@@ -6,8 +6,8 @@ O projeto consiste em um site para comercialização de iPhones. Por meio dele �
 # APIs
 
 O front-end se comunica com 3 APIs, duas delas desenvolvidas, e uma API gratuita. 
-A API relacionada ao estoque se encontra no link: 
-A API relacionada ao registro de vendas se encontra no link:
+A API relacionada ao estoque se encontra no link: https://github.com/mateusemmerick/mvp3_C1
+A API relacionada ao registro de vendas se encontra no link: https://github.com/mateusemmerick/mvp3_C2
 
 # API Externa
 A API externa utilizada foi a ViaCEP (viacep.com.br). É uma API gratuita, sem necessidade de registro para utilização. A rota utilizada foi a de validação do CEP, obtendo o retorno no formato JSON. Essa rota é executada diretamente no front-end.
